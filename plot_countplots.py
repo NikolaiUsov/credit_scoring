@@ -37,6 +37,6 @@ def plot_countplots(df, features_col, target_col, cols_per_row=3):
     for idx in range(len(features_col), len(axes)):
         axes[idx].set_visible(False)
         
-    plt.suptitle(f'Распределение бинарных признаков по {target_col}\n\n', fontsize=14, fontweight='bold')
+    plt.suptitle(f'Распределение категориальных признаков по {target_col}\n\n', fontsize=14, fontweight='bold')
     plt.tight_layout()
     plt.show()
